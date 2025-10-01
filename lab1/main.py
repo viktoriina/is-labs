@@ -37,7 +37,6 @@ WALL_IMG = load_image('assets/wall2.png', (CELL_SIZE, CELL_SIZE))
 
 class Game:
     def __init__(self):
-        #print('fuck')
         self.reset_game()
         self.game_time = 0
         
@@ -129,15 +128,10 @@ class Game:
             if event.type == pygame.QUIT:
                 self.running = False
             elif event.type == pygame.KEYDOWN:
-                #print('fuck')
                 if event.key == pygame.K_h:
-                    #print('lkkk')
                     self.set_auto_mode(True)
                 elif event.key == pygame.K_j:
-                    #print('okkk')
                     self.set_auto_mode(False)
-                # else:
-                #     print('----')
 
         if not self.auto_mode:
             keys = pygame.key.get_pressed()
