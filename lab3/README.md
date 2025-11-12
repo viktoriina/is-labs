@@ -32,5 +32,8 @@ The system supports random instance generation or CSV-based input for custom dat
 
 ## Example Usage
 ```bash
+# Activate isolated python environment
+source venv/bin/activate
+
 # Run algorithm (with or without CSVs)
 python main.py
